@@ -2,6 +2,32 @@
 Con este proyecto se busco comprender y aplicar el concepto de pila (Stack) en un caso práctico mediante el desarrollo de un simulador de deshacer y rehacer (Undo/Redo) en Java.
 
 
+# Comprensión teórica: definición y estructura de pila
+
+Una pila (stack) es una estructura de datos lineal que obedece el principio LIFO (Last In, First Out), es decir, la historia más reciente es la primera en salir.
+Las pilas se utilizan para almacenar información de transmisión temporalmente, o bien controlar los flujos de las secuencias de acciones o de estados.
+
+Algunas de las operaciones básicas de la pila son:
+
+push: inserta un elemento en el tope de la pila.
+
+pop: eliminar del tope de la pila el elemento que allí está y devolvérselo.
+
+peek: permite volver a consultar el elemento que hay en la cima de la pila, pero sin eliminarlo.
+
+isEmpty: controla si la pila está vacía.
+
+En este proyecto la estructura de pila se va a utilizar para simular un editor de textos, mediante las operaciones Undo/Redo:
+
+La pila principal guarda todas las líneas de textos que el usuario va escribiendo.
+
+Al realizar un Undo: la última línea escrita se elimina de la pila principal y se almacena en la pila secundaria.
+
+Finalmente, un Redo hará recuperar el último elemento de la pila secundaria y lo añadirá a la pila principal.
+
+De esta manera, enfatizando que las pilas permiten gestionar los estados del texto y controlar las acciones del usuario en el mismo sentido que funcionan los editores de texto como los actuales editores de texto.
+
+
 # Implementación o Ruta Metodológica
 
 El proyecto se ejecutó de acuerdo con las siguientes fases: 
