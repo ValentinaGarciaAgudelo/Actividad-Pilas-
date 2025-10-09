@@ -69,6 +69,6 @@ Salir: termina la ejecución del programa.
 # Contribuyentes (integrantes del grupo)
 
 •	Valentina García Agudelo
-•	Cindy Loreny Guarín 
+
 
 
